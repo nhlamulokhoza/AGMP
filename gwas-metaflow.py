@@ -196,12 +196,36 @@ class GWASProcessingFlow(FlowSpec):
         # Define regional classifications
         libraries = {
             'Southern Africa': ['Angola', 'Botswana', 'Eswatini', 'Swaziland', 'Lesotho', 'Malawi', 
-                              'Mozambique', 'Namibia', 'South Africa', 'Zambia', 'Zimbabwe'],
+                                'Mozambique', 'Namibia', 'South Africa', 'Zambia', 'Zimbabwe'],
             'East Africa': ['Comoros', 'Djibouti', 'Eritrea', 'Ethiopia', 'Kenya', 'Madagascar', 
-                          'Mauritius', 'Rwanda', 'Seychelles', 'Somalia', 'South Sudan', 'Sudan', 
-                          'Tanzania', 'Uganda'],
-            # ... [other regions as defined in your original code]
-            'Africa unspecified': ['NR']
+                            'Mauritius', 'Rwanda', 'Seychelles', 'Somalia', 'South Sudan', 'Sudan', 'Tanzania', 'Uganda'],
+            'West Africa': ['Benin', 'Burkina Faso', 'Cape Verde', 'Cabo Verde', 'Ivory Coast', 'Gambia', 'Ghana', 
+                            'Guinea', 'Guinea-Bissau', 'Liberia', 'Mali', 'Niger', 'Nigeria', 'Senegal', 'Sierra Leone', 'Togo'],
+            'North Africa': ['Algeria', 'Egypt', 'Libya', 'Mauritania', 'Morocco', 'Tunisia'],
+            'Central Africa': ['Burundi', 'Cameroon', 'Central African Republic', 'Chad', 'Congo Republic', 
+                               'Democratic Republic of the Congo', 'Equatorial Guinea', 'Gabon', 'São Tomé and Príncipe'],
+            'Oceania': ['Australia', 'Fiji', 'Kiribati', 'Marshall Islands', 'Micronesia', 'Nauru', 'New Zealand', 
+                        'Palau', 'Papua New Guinea', 'Samoa', 'Solomon Islands', 'Tonga', 'Tuvalu', 'Vanuatu'],
+            'African-American / Afro-Caribbean': ['Canada', 'United States', 'USA', 'U.S.', 'Mexico', 'Guatemala', 
+                                                  'Belize', 'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica', 'Panama', 
+                                                  'Antigua and Barbuda', 'Bahamas', 'Barbados', 'Cuba', 'Dominica', 'Dominican Republic', 
+                                                  'Grenada', 'Haiti', 'Jamaica', 'Saint Kitts and Nevis', 'Saint Lucia', 
+                                                  'Saint Vincent and the Grenadines', 'Trinidad and Tobago', 'Guatemala', 'Belize', 
+                                                  'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica', 'Panama', 'Colombia', 'Venezuela', 
+                                                  'Guyana', 'Suriname', 'Brazil', 'Ecuador', 'Peru', 'Bolivia', 'Chile', 'Argentina', 'Paraguay', 'Uruguay'],
+            'Europe': ['Albania', 'Andorra', 'Austria', 'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 
+                       'Cyprus', 'Czech Republic (Czechia)', 'Czechia', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 
+                       'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Kosovo', 'Latvia', 'Liechtenstein', 'Lithuania', 
+                       'Luxembourg', 'Malta', 'Moldova', 'Monaco', 'Montenegro', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 
+                       'Portugal', 'Romania', 'Russia', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 
+                       'Ukraine', 'United Kingdom (UK)', 'United Kingdom', 'UK', 'Vatican City'],
+            'Asia': ['Afghanistan', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Bhutan', 'Brunei', 'Cambodia', 'China', 'Cyprus', 
+                     'Georgia', 'India', 'Indonesia', 'Iran', 'Iraq', 'Israel', 'Japan', 'Jordan', 'Kazakhstan', 'Kuwait', 'Kyrgyzstan', 
+                     'Laos', 'Lebanon', 'Malaysia', 'Maldives', 'Mongolia', 'Myanmar (Burma)', 'Burma', 'Myanmar', 'Nepal', 'North Korea', 
+                     'Oman', 'Pakistan', 'Palestine', 'Philippines', 'Qatar', 'Saudi Arabia', 'Singapore', 'South Korea', 'Sri Lanka', 
+                     'Syria', 'Taiwan', 'Tajikistan', 'Thailand', 'Timor-Leste (East Timor)', 'East Timor', 'Timor-Leste', 'Turkey', 
+                     'Turkmenistan', 'United Arab Emirates (UAE)', 'UAE', 'United Arab Emirates', 'Uzbekistan', 'Vietnam', 'Yemen'],
+            'Africa unspecified':['NR']
         }
 
         def find_libraries(countries):
