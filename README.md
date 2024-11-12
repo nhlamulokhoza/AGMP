@@ -135,7 +135,7 @@ def new_step(self):
 
 ## Acknowledgments
 - Africa Genomics Data Hub
-    - Developed for the African Genomic Medicine Portal (AGMP)
+    - This workflow was developed for the African Genomic Medicine Portal (AGMP)
 - GWAS Catalog for providing phenotype associations
 - BioMart for providing genomic data services
 - Metaflow developers for the workflow framework
