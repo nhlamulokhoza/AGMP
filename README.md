@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ## Usage
 Run the pipeline using the following command:
 ```bash
-python gwas_processing_flow.py run
+python gwas-metaflow.py run
 ```
 
 ### Pipeline Steps
