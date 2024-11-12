@@ -34,7 +34,7 @@ The pipeline expects the following input file:
 ## Installation
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/nhlamulokhoza/AGMP.git
 cd gwas-processing-pipeline
 ```
 
